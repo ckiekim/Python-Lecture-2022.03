@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>u12_딕셔너리</title>
+<title>심사문제9-12</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13077,7 +13077,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Unit-12.-&#46357;&#49492;&#45320;&#47532;(Dictionary)">Unit 12. &#46357;&#49492;&#45320;&#47532;(Dictionary)<a class="anchor-link" href="#Unit-12.-&#46357;&#49492;&#45320;&#47532;(Dictionary)">&#182;</a></h1>
+<h3 id="&#49900;&#49324;&#47928;&#51228;-9.4">&#49900;&#49324;&#47928;&#51228; 9.4<a class="anchor-link" href="#&#49900;&#49324;&#47928;&#51228;-9.4">&#182;</a></h3><pre>
+다음 소스 코드를 완성하여 실행 결과대로 문자열이 출력되게 만드세요.
+</pre>
 </div>
 </div>
 </div>
@@ -13086,806 +13088,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">490</span><span class="p">,</span> <span class="mi">334</span><span class="p">,</span> <span class="mi">550</span><span class="p">,</span> <span class="mf">18.72</span><span class="p">]</span>
-<span class="n">lux2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;health&#39;</span><span class="p">:</span><span class="mi">490</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="s1">&#39;melee&#39;</span><span class="p">:</span><span class="mi">550</span><span class="p">,</span> <span class="s1">&#39;armor&#39;</span><span class="p">:</span><span class="mf">18.72</span><span class="p">}</span>
-<span class="n">lux2</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">armor</span> <span class="o">=</span> <span class="n">lux1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">armor</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>18.72</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">armor</span> <span class="o">=</span> <span class="n">lux2</span><span class="p">[</span><span class="s1">&#39;armor&#39;</span><span class="p">]</span>
-<span class="n">armor</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>18.72</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="12.1-&#46357;&#49492;&#45320;&#47532;-&#47564;&#46308;&#44592;">12.1 &#46357;&#49492;&#45320;&#47532; &#47564;&#46308;&#44592;<a class="anchor-link" href="#12.1-&#46357;&#49492;&#45320;&#47532;-&#47564;&#46308;&#44592;">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># key값의 순서가 보장되지 않음</span>
-<span class="n">lux</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;health&#39;</span><span class="p">:</span><span class="mi">490</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="s1">&#39;melee&#39;</span><span class="p">:</span><span class="mi">550</span><span class="p">,</span> <span class="s1">&#39;armor&#39;</span><span class="p">:</span><span class="mf">18.72</span><span class="p">}</span>
-<span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;health&#39;</span><span class="p">:</span><span class="mi">490</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="s1">&#39;melee&#39;</span><span class="p">:</span><span class="mi">550</span><span class="p">,</span> <span class="s1">&#39;armor&#39;</span><span class="p">:</span><span class="mf">18.72</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">430</span><span class="p">}</span>
-<span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 430, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># key값의 순서(입력한 순서)가 보장</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
-<span class="n">d</span><span class="p">[</span><span class="s1">&#39;health&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">490</span>
-<span class="n">d</span><span class="p">[</span><span class="s1">&#39;mana&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">334</span>
-<span class="n">d</span><span class="p">[</span><span class="s1">&#39;armor&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">18.72</span>
-<span class="n">d</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[8]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>OrderedDict([(&#39;health&#39;, 490), (&#39;mana&#39;, 334), (&#39;armor&#39;, 18.72)])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>빈 딕셔너리 생성</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">b</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[9]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(dict, dict)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>set</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">c</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{1, 2, 3}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>dict() 로 딕셔너리 생성</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux1</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">health</span><span class="o">=</span><span class="mi">490</span><span class="p">,</span> <span class="n">mana</span><span class="o">=</span><span class="mi">334</span><span class="p">,</span> <span class="n">melee</span><span class="o">=</span><span class="mi">550</span><span class="p">,</span> <span class="n">armor</span><span class="o">=</span><span class="mf">18.72</span><span class="p">)</span>    <span class="c1"># 키=값 형식</span>
-<span class="n">lux1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;health&#39;</span><span class="p">,</span><span class="s1">&#39;mana&#39;</span><span class="p">,</span><span class="s1">&#39;melee&#39;</span><span class="p">,</span><span class="s1">&#39;armor&#39;</span><span class="p">]</span>
-<span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">490</span><span class="p">,</span> <span class="mi">334</span><span class="p">,</span> <span class="mi">550</span><span class="p">,</span> <span class="mf">18.72</span><span class="p">]</span>
-<span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[(&#39;health&#39;, 490), (&#39;mana&#39;, 334), (&#39;melee&#39;, 550), (&#39;armor&#39;, 18.72)]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
-<span class="n">lux2</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux3</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">([(</span><span class="s1">&#39;health&#39;</span><span class="p">,</span> <span class="mi">490</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;mana&#39;</span><span class="p">,</span> <span class="mi">334</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;melee&#39;</span><span class="p">,</span> <span class="mi">550</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;armor&#39;</span><span class="p">,</span> <span class="mf">18.72</span><span class="p">)])</span>
-<span class="n">lux3</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[18]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux4</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">({</span><span class="s1">&#39;health&#39;</span><span class="p">:</span><span class="mi">490</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="s1">&#39;melee&#39;</span><span class="p">:</span><span class="mi">550</span><span class="p">,</span> <span class="s1">&#39;armor&#39;</span><span class="p">:</span><span class="mf">18.72</span><span class="p">})</span>
-<span class="n">lux4</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 18.72, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>추천 방법</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;health&#39;</span><span class="p">:</span><span class="mi">490</span><span class="p">,</span> <span class="s1">&#39;mana&#39;</span><span class="p">:</span><span class="mi">334</span><span class="p">,</span> <span class="s1">&#39;melee&#39;</span><span class="p">:</span><span class="mi">550</span><span class="p">,</span> <span class="s1">&#39;armor&#39;</span><span class="p">:</span><span class="mf">18.72</span><span class="p">}</span>
-<span class="n">lux2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="12.2-&#46357;&#49492;&#45320;&#47532;-&#53412;&#50640;-&#51217;&#44540;&#54616;&#44256;-&#44050;-&#54624;&#45817;&#54616;&#44592;">12.2 &#46357;&#49492;&#45320;&#47532; &#53412;&#50640; &#51217;&#44540;&#54616;&#44256; &#44050; &#54624;&#45817;&#54616;&#44592;<a class="anchor-link" href="#12.2-&#46357;&#49492;&#45320;&#47532;-&#53412;&#50640;-&#51217;&#44540;&#54616;&#44256;-&#44050;-&#54624;&#45817;&#54616;&#44592;">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span><span class="p">[</span><span class="s1">&#39;mana&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[22]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>334</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span><span class="p">[</span><span class="s1">&#39;armor&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">21.34</span>
-<span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[23]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 21.34, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span><span class="p">[</span><span class="s1">&#39;new&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Kim&#39;</span>
-<span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[24]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 21.34, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550, &#39;new&#39;: &#39;Kim&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span><span class="p">[</span><span class="s1">&#39;origin&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-25-69b3bda4e409&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>lux<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;origin&#39;</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-red-fg">KeyError</span>: &#39;origin&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>in 연산자: key 가 있는지 확인</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="s1">&#39;health&#39;</span> <span class="ow">in</span> <span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[26]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>key 갯수</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">lux</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[27]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>5</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">lux</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[28]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;armor&#39;: 21.34, &#39;health&#39;: 490, &#39;mana&#39;: 334, &#39;melee&#39;: 550, &#39;new&#39;: &#39;Kim&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
-<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="s2">&quot;Colab Notebo/u12_딕셔너리.ipynb</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&#39;Python&#39; is a &quot;programming language&quot;</span>
+<span class="s2">that lets you work quickly</span>
+<span class="s2">and</span>
+<span class="s2">integrate systems more effectively.&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13902,207 +13109,148 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] WARNING | pattern &#39;./u12_딕셔너리.ipynb&#39; matched no files
-This application is used to convert notebook files (*.ipynb)
-        to various other formats.
-
-        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
-
-Options
-=======
-The options below are convenience aliases to configurable class-options,
-as listed in the &#34;Equivalent to&#34; description-line of the aliases.
-To see all configurable class-options for some &lt;cmd&gt;, use:
-    &lt;cmd&gt; --help-all
-
---debug
-    set log level to logging.DEBUG (maximize logging output)
-    Equivalent to: [--Application.log_level=10]
---show-config
-    Show the application&#39;s configuration (human-readable format)
-    Equivalent to: [--Application.show_config=True]
---show-config-json
-    Show the application&#39;s configuration (json format)
-    Equivalent to: [--Application.show_config_json=True]
---generate-config
-    generate default config file
-    Equivalent to: [--JupyterApp.generate_config=True]
--y
-    Answer yes to any questions instead of prompting.
-    Equivalent to: [--JupyterApp.answer_yes=True]
---execute
-    Execute the notebook prior to export.
-    Equivalent to: [--ExecutePreprocessor.enabled=True]
---allow-errors
-    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if &#39;--execute&#39; was specified, too.
-    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
---stdin
-    read a single notebook file from stdin. Write the resulting notebook with default basename &#39;notebook.*&#39;
-    Equivalent to: [--NbConvertApp.from_stdin=True]
---stdout
-    Write notebook output to stdout instead of files.
-    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
---inplace
-    Run nbconvert in place, overwriting the existing notebook (only 
-            relevant when converting to notebook format)
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
---clear-output
-    Clear output of current file and save in place, 
-            overwriting the existing notebook.
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
---no-prompt
-    Exclude input and output prompts from converted document.
-    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
---no-input
-    Exclude input cells and output prompts from converted document. 
-            This mode is ideal for generating code-free reports.
-    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True]
---log-level=&lt;Enum&gt;
-    Set the log level by value or name.
-    Choices: any of [0, 10, 20, 30, 40, 50, &#39;DEBUG&#39;, &#39;INFO&#39;, &#39;WARN&#39;, &#39;ERROR&#39;, &#39;CRITICAL&#39;]
-    Default: 30
-    Equivalent to: [--Application.log_level]
---config=&lt;Unicode&gt;
-    Full path of a config file.
-    Default: &#39;&#39;
-    Equivalent to: [--JupyterApp.config_file]
---to=&lt;Unicode&gt;
-    The export format to be used, either one of the built-in formats
-            [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;]
-            or a dotted object name that represents the import path for an
-            `Exporter` class
-    Default: &#39;html&#39;
-    Equivalent to: [--NbConvertApp.export_format]
---template=&lt;Unicode&gt;
-    Name of the template file to use
-    Default: &#39;&#39;
-    Equivalent to: [--TemplateExporter.template_file]
---writer=&lt;DottedObjectName&gt;
-    Writer class used to write the 
-                                        results of the conversion
-    Default: &#39;FilesWriter&#39;
-    Equivalent to: [--NbConvertApp.writer_class]
---post=&lt;DottedOrNone&gt;
-    PostProcessor class used to write the
-                                        results of the conversion
-    Default: &#39;&#39;
-    Equivalent to: [--NbConvertApp.postprocessor_class]
---output=&lt;Unicode&gt;
-    overwrite base name use for output files.
-                can only be used when converting one notebook at a time.
-    Default: &#39;&#39;
-    Equivalent to: [--NbConvertApp.output_base]
---output-dir=&lt;Unicode&gt;
-    Directory to write output(s) to. Defaults
-                                  to output to the directory of each notebook. To recover
-                                  previous default behaviour (outputting to the current 
-                                  working directory) use . as the flag value.
-    Default: &#39;&#39;
-    Equivalent to: [--FilesWriter.build_directory]
---reveal-prefix=&lt;Unicode&gt;
-    The URL prefix for reveal.js (version 3.x).
-            This defaults to the reveal CDN, but can be any url pointing to a copy 
-            of reveal.js. 
-            For speaker notes to work, this must be a relative path to a local 
-            copy of reveal.js: e.g., &#34;reveal.js&#34;.
-            If a relative path is given, it must be a subdirectory of the
-            current directory (from which the server is run).
-            See the usage documentation
-            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
-            for more details.
-    Default: &#39;&#39;
-    Equivalent to: [--SlidesExporter.reveal_url_prefix]
---nbformat=&lt;Enum&gt;
-    The nbformat version to write.
-            Use this to downgrade notebooks.
-    Choices: any of [1, 2, 3, 4]
-    Default: 4
-    Equivalent to: [--NotebookExporter.nbformat_version]
-
-Examples
---------
-
-    The simplest way to use nbconvert is
-
-            &gt; jupyter nbconvert mynotebook.ipynb
-
-            which will convert mynotebook.ipynb to the default format (probably HTML).
-
-            You can specify the export format with `--to`.
-            Options include [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;].
-
-            &gt; jupyter nbconvert --to latex mynotebook.ipynb
-
-            Both HTML and LaTeX support multiple output templates. LaTeX includes
-            &#39;base&#39;, &#39;article&#39; and &#39;report&#39;.  HTML includes &#39;basic&#39; and &#39;full&#39;. You
-            can specify the flavor of the format used.
-
-            &gt; jupyter nbconvert --to html --template basic mynotebook.ipynb
-
-            You can also pipe the output to stdout, rather than a file
-
-            &gt; jupyter nbconvert mynotebook.ipynb --stdout
-
-            PDF is generated via latex
-
-            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
-
-            You can get (and serve) a Reveal.js-powered slideshow
-
-            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
-
-            Multiple notebooks can be given at the command line in a couple of 
-            different ways:
-
-            &gt; jupyter nbconvert notebook*.ipynb
-            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
-
-            or you can specify the notebooks list in a config file, containing::
-
-                c.NbConvertApp.notebooks = [&#34;my_notebook.ipynb&#34;]
-
-            &gt; jupyter nbconvert --config mycfg.py
-
-To see all available configurables, use `--help-all`.
-
+<pre>&#39;Python&#39; is a &#34;programming language&#34;
+that lets you work quickly
+and
+integrate systems more effectively.
 </pre>
 </div>
 </div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49900;&#49324;&#47928;&#51228;-10.5">&#49900;&#49324;&#47928;&#51228; 10.5<a class="anchor-link" href="#&#49900;&#49324;&#47928;&#51228;-10.5">&#182;</a></h3><pre>
+표준 입력으로 정수가 입력됩니다. 
+range의 시작하는 숫자는 -10, 끝나는 숫자는 10이며 입력된 정수만큼 증가하는 숫자가 들어가도록 튜플을 만들고, 
+해당 튜플을 출력하는 프로그램을 만드세요(input에서 안내 문자열은 출력하지 않아야 합니다).
+</pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">inc</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="n">inc</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
 
 <div class="output_area">
 
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-29-c93e1eec8936&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_cell_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;shell&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;jupyter nbconvert --to html ./u12_딕셔너리.ipynb&#39;</span><span class="ansi-blue-fg">)</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
+(-10, -7, -4, -1, 2, 5, 8)
+</pre>
+</div>
+</div>
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2115</span>             magic_arg_s <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>var_expand<span class="ansi-blue-fg">(</span>line<span class="ansi-blue-fg">,</span> stack_depth<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2116</span>             <span class="ansi-green-fg">with</span> self<span class="ansi-blue-fg">.</span>builtin_trap<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 2117</span><span class="ansi-red-fg">                 </span>result <span class="ansi-blue-fg">=</span> fn<span class="ansi-blue-fg">(</span>magic_arg_s<span class="ansi-blue-fg">,</span> cell<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2118</span>             <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">   2119</span> 
+</div>
+</div>
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">_shell_cell_magic</span><span class="ansi-blue-fg">(args, cmd)</span>
-<span class="ansi-green-intense-fg ansi-bold">    111</span>   result <span class="ansi-blue-fg">=</span> _run_command<span class="ansi-blue-fg">(</span>cmd<span class="ansi-blue-fg">,</span> clear_streamed_output<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    112</span>   <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> parsed_args<span class="ansi-blue-fg">.</span>ignore_errors<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 113</span><span class="ansi-red-fg">     </span>result<span class="ansi-blue-fg">.</span>check_returncode<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    114</span>   <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">    115</span> 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49900;&#49324;&#47928;&#51228;-11.8">&#49900;&#49324;&#47928;&#51228; 11.8<a class="anchor-link" href="#&#49900;&#49324;&#47928;&#51228;-11.8">&#182;</a></h3><pre>
+표준 입력으로 숫자 또는 문자열 여러 개가 입력되어 리스트 x에 저장됩니다(입력되는 숫자 또는 문자열의 개수는 정해져 있지 않음). 
+다음 소스 코드를 완성하여 리스트 x의 마지막 요소 5개를 삭제한 뒤 튜플로 출력되게 만드세요.
+</pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="k">del</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
 
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">check_returncode</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    137</span>     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>returncode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    138</span>       raise subprocess.CalledProcessError(
-<span class="ansi-green-fg">--&gt; 139</span><span class="ansi-red-fg">           returncode=self.returncode, cmd=self.args, output=self.output)
-</span><span class="ansi-green-intense-fg ansi-bold">    140</span> 
-<span class="ansi-green-intense-fg ansi-bold">    141</span>   <span class="ansi-green-fg">def</span> _repr_pretty_<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> p<span class="ansi-blue-fg">,</span> cycle<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># pylint:disable=unused-argument</span>
+    </div>
+</div>
+</div>
 
-<span class="ansi-red-fg">CalledProcessError</span>: Command &#39;jupyter nbconvert --to html ./u12_딕셔너리.ipynb&#39; returned non-zero exit status 255.</pre>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 4 5 6 7 8 9 10
+(&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49900;&#49324;&#47928;&#51228;-11.9">&#49900;&#49324;&#47928;&#51228; 11.9<a class="anchor-link" href="#&#49900;&#49324;&#47928;&#51228;-11.9">&#182;</a></h3><pre>
+표준 입력으로 문자열 두 개가 각 줄에 입력됩니다(문자열의 길이는 정해져 있지 않음). 
+첫 번째 문자열에서 인덱스가 홀수인 문자와 두 번째 문자열에서 인덱스가 짝수인 문자를 연결하여 출력하는 
+프로그램을 만드세요(input에서 안내 문자열은 출력하지 않아야 합니다). 
+연결 순서는 첫 번째 문자열, 두 번째 문자열 순입니다. 
+그리고 0은 짝수로 처리합니다.
+</pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">first</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+<span class="n">second</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">second</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>python
+python
+yhnpto
+</pre>
 </div>
 </div>
 
@@ -14112,10 +13260,98 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">first</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">second</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>apple strawberry
+plsrwer
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#49900;&#49324;&#47928;&#51228;-12.5">&#49900;&#49324;&#47928;&#51228; 12.5<a class="anchor-link" href="#&#49900;&#49324;&#47928;&#51228;-12.5">&#182;</a></h3><pre>
+표준 입력으로 문자열 여러 개와 숫자(실수) 여러 개가 두 줄로 입력됩니다. 
+입력된 첫 번째 줄은 키, 두 번째 줄은 값으로 하여 딕셔너리를 생성한 뒤 딕셔너리를 출력하는 프로그램을 만드세요. 
+input().split()의 결과를 변수 한 개에 저장하면 리스트로 저장됩니다.
+</pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">keys</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">values</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">values</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a b c d
+3.1 2.3 4.5 9.1
+{&#39;a&#39;: 3.1, &#39;b&#39;: 2.3, &#39;c&#39;: 4.5, &#39;d&#39;: 9.1}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="HTML&#47196;-&#48320;&#54872;">HTML&#47196; &#48320;&#54872;<a class="anchor-link" href="#HTML&#47196;-&#48320;&#54872;">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="n">MyDrive</span><span class="o">/</span><span class="s2">&quot;Colab Notebooks&quot;</span><span class="o">/</span><span class="n">심사문제9</span><span class="o">-</span><span class="mf">12.</span><span class="n">ipynb</span>
 </pre></div>
 
     </div>
